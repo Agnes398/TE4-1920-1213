@@ -1,0 +1,26 @@
+{
+  "name": "demo-20191213",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agnes398/TE4-1920-1213.git"
+  },
+  "author": "Agnes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agnes398/TE4-1920-1213/issues"
+  },
+  "homepage": "https://github.com/Agnes398/TE4-1920-1213#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.4.0",
+    "node": "^13.3.0",
+    "nodemon": "^2.0.2"
+  }
+}
