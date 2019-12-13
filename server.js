@@ -9,7 +9,7 @@ app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({extended: true}));
 
 app.get('/', (req, res) => {
-    res.send("I am also alive");
+    res.send("I am also stayin alive");
 }); 
 
 app.listen(port, () => {
