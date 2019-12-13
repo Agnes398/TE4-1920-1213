@@ -23,7 +23,7 @@ app.get('/notes', (req, res) => {
     })
 });
 
-app.listen(4242, () => {
+app.listen(port, () => {
     client.connect(err => {
         collection = client.db("Acme").collection("Notes");
         console.log('Connect to db');
