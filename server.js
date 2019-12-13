@@ -25,6 +25,10 @@ app.get('/notes', (req, res) => {
     })
 });
 
+app.post('/notes/add', (req, res) => {
+    collection.insertOne() 
+});
+
 app.listen(port, () => {
     client.connect(err => {
         collection = client.db("Acme").collection("Notes");
