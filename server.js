@@ -13,8 +13,10 @@ const client = new MongoClient(uri, {useNewUrlParser: true}, {useUnifiedTopology
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({extended: true}));
 
-app.get('/', (req, res) => {
-    res.send("I am also stayin alive");
+app.get('/notes/:id', (req, res) => {
+    collection.findOne({'_id' : new ObjectId(req.params.id)}, (err, result) => {
+        res.send(result);
+    })
 }); 
 
 app.get('/notes', (req, res) => {
