@@ -12,6 +12,6 @@ app.get('/', (req, res) => {
     res.send("I am also alive");
 }); 
 
-app.listen(4242, () => {
+app.listen(port, () => {
     console.log("I am alive");
 });
